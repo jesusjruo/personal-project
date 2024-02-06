@@ -13,7 +13,8 @@
 - Clone the repository.
 - Modify the .env file to match your Database manager credentials.
 - From the root of the project in a terminal window run "Composer update" (Make sure to have composer installed).
-- Run php artisan serve.
+- Run: php artisan migrate.
+- Run: php artisan serve.
 
 ## About Laravel
 
