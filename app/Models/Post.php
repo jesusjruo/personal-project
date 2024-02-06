@@ -10,4 +10,9 @@ class Post extends Model
     use HasFactory;
 
     protected $fillable = ['title' , 'body' , 'user_id'];
+
+    //Post Model relationship with user based on the foreign key post table has ('user_id)
+    public function user() {
+        return $this->belongsTo(User::class , 'user_id');
+    }
 }
